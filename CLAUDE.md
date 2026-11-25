@@ -34,7 +34,7 @@ what's specific to Grave Error.
 
 ## Copy rules
 
-- **Ground every claim in the game's own canon:** `C:\Projects\Grave Error\LORE.md`
+- **Ground every claim in the game's own canon:** `C:\Projects\grave-error\LORE.md`
   (premise and settled facts) and `docs\vision.md`. Don't invent lore.
 - **Facts:** 3D first-person zombie survival; solo or co-op for 2–4 players; PC;
   "realism first"; the status is **"Coming eventually"**. The risen are **Hacks**, the
