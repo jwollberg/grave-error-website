@@ -56,7 +56,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
   # Vault (Josh's home server) serves the site: it copies this branch every two minutes
-  # (jwollberg/home, vault/README.md, "Public websites"). Pages above stays on as the fallback
+  # (jwollberg/atheos-home, AtheosHome/vault/README.md, "Public websites"). Pages above stays on as the fallback
   # until Josh turns it off.
   vault:
     runs-on: ubuntu-latest
