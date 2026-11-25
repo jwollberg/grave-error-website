@@ -1,12 +1,11 @@
 # Grave Error — Site Guide
 
 Read the master workspace guide first: [`..\CLAUDE.md`](../CLAUDE.md). It covers the
-shared build recipe (Astro + GitHub Pages) and the publish steps. This file only covers
+shared build recipe (Astro, served from Vault) and the publish steps. This file only covers
 what's specific to Grave Error.
 
-- **Domain:** graveerrorgame.com, served by GitHub Pages (repo `jwollberg/graveerrorgame`)
-  through Cloudflare: apex and `www` are proxied CNAMEs to `jwollberg.github.io`, SSL mode
-  "Full", same as atheosstudios.com. The old Page Rule that forwarded it to
+- **Domain:** graveerrorgame.com (repo `jwollberg/graveerrorgame`), served from Vault, Josh's home server, through Cloudflare (since 2026-11-25; GitHub Pages before, still deployed as the fallback until Josh turns it off). Push to `main`: GitHub builds it, the workflow's `vault` job pushes the finished pages to the `site` branch, and Vault serves them within about four minutes. How it works and how to roll back: `AtheosHome/vault/README.md`, "Public websites", in `jwollberg/atheos-home`. Apex and `www`
+  are proxied CNAMEs to Vault's tunnel, same as atheosstudios.com. The old Page Rule that forwarded it to
   atheosstudios.com was deleted 2026-10-09.
 - **What it is:** the one-page site for *Grave Error*, the zombie survival game by
   Atheos Studios. Links back to atheosstudios.com.
